@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+.text-form {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.btn {
+  background-color: rgba(235,110,128,0.9);
+  color: white;
+}
+
+body {
+    background-image: url(/static/yogurt-bar.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
