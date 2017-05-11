@@ -2,7 +2,7 @@ import os
 
 from jinja2 import StrictUndefined
 
-from flask import (Flask, render_template, redirect, flash)
+from flask import (Flask, request, render_template, redirect, flash)
 
 from helper import send_marketing_message
 
@@ -22,9 +22,11 @@ def index():
 
 @app.route('/send-text', methods=['POST'])
 def send_text():
-    '''Send a random marketing message to the user.'''
-    send_marketing_message()
-    flash('Marketing message delivered to subscribers!')
+    '''Send a chosen marketing message to the subscriber.'''
+
+    marketing_message = request.form.get('message')
+    send_marketing_message(marketing_message)
+
     return redirect('/')
 
 if __name__ == '__main__':

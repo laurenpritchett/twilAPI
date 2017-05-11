@@ -1,14 +1,42 @@
-h1 {
+h1, h3 {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     color: white;
 }
 
+h2 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: #328CC1;
+}
+
 .text-form {
-  max-width: 330px;
+  max-width: 600px;
   padding: 15px;
   margin: 0 auto;
   font-family: 'Quicksand', sans-serif;
+}
+
+.text-form, .text-form-heading {
+  margin-bottom: 10px;
+}
+
+.text-form {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.text-form {
+  z-index: 2;
+}
+.text-form input[type="select"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .btn {
